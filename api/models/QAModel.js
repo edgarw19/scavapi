@@ -26,8 +26,7 @@ var QASchema = new Schema({
         type: String,
     },
     imageUrl: {
-        type: String,
-        required: "Incorrect Response is required."
+        type: String
     },
     hint: {
         type: String,
