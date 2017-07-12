@@ -11,7 +11,7 @@ var express = require('express'),
   bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://test1:test@ds153732.mlab.com:53732/puamscavenger');
+mongoose.connect('mongodb://test:test@ds141242.mlab.com:41242/qachatbot');
 
 app.use(function (req, res, next) {
 
