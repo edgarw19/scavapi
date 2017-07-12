@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
   QAs = mongoose.model('QA');
 
 exports.list_all_QA = function (req, res) {
-  QAs.find({ 'isActive': true }, function (err, qa) {
+  QAs.find({}, function (err, qa) {
     if (err)
       res.send(err);
     res.json(qa);
@@ -13,7 +13,7 @@ exports.list_all_QA = function (req, res) {
 };
 
 exports.list_all_QA_By_Category = function (req, res) {
-  QAs.find({ 'isActive': true, exhibitCategory: req.params.caId }, function (err, qa) {
+  QAs.find({exhibitCategory: req.params.caId }, function (err, qa) {
     if (err)
       res.send(err);
     res.json(qa);
