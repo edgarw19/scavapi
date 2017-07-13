@@ -63,7 +63,7 @@ exports.delete_a_QA = function (req, res) {
 };
 
 exports.list_all_QA_Analytics = function (req, res) {
-  QAs.find({ 'isActive': true }, function (err, qa) {
+  QAs.find({}, function (err, qa) {
     if (err)
       res.send(err);
 
