@@ -26,7 +26,7 @@ var QASchema = new Schema({
         type: String,
     },
     imageUrl: {
-        type: String
+        type: String,
     },
     hint: {
         type: String,

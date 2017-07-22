@@ -7,7 +7,7 @@ module.exports = function (app) {
     .get(QAController.list_all_QA)
     .post(QAController.create_a_QA);
 
-  app.route('/qacas/:caId')
+  app.route('/qacas/:caId/:level')
     .get(QAController.list_all_QA_By_Category)
 
   app.route('/qa/:qaId')

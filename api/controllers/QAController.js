@@ -13,7 +13,7 @@ exports.list_all_QA = function (req, res) {
 };
 
 exports.list_all_QA_By_Category = function (req, res) {
-  QAs.find({exhibitCategory: req.params.caId }, function (err, qa) {
+  QAs.find({ exhibitCategory: req.params.caId, level: req.params.level }, function (err, qa) {
     if (err)
       res.send(err);
     res.json(qa);
