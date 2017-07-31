@@ -30,12 +30,15 @@ var QASchema = new Schema({
     },
     hint: {
         type: String,
+        required: "Hint is required."
     },
     exhibitCategory: {
         type: String,
+        required: "Category is required."
     },
     level: {
         type: Number,
+        required: "Level is required."
     },
     successCnt: {
         type: Number

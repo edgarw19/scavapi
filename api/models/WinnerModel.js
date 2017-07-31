@@ -9,6 +9,9 @@ var winnerSchema = new Schema({
     userId: {
         type: String,
     },
+    quizStatTime:{
+        type : Date,
+    },
     winDate: {
         type: Date,
         default: Date.now

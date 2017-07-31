@@ -10,5 +10,6 @@ module.exports = function (app) {
 
     app.route('/category/:categoryId')
         .get(CategoryController.read_a_Category)
-        .put(CategoryController.update_a_Category);
+        .put(CategoryController.update_a_Category)
+        .delete(CategoryController.delete_a_Category);
 };

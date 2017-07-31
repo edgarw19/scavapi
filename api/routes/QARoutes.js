@@ -15,6 +15,9 @@ module.exports = function (app) {
     .put(QAController.update_a_QA)
     .delete(QAController.delete_a_QA);
 
-    app.route('/qaanalytics')
-    .get(QAController.list_all_QA_Analytics)
+  app.route('/qaanalytics')
+    .get(QAController.list_all_QA_Analytics);
+
+  app.route('/qamainanalytics')
+    .get(QAController.Qa_Avg_time_to_completion)
 };
