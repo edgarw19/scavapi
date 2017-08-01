@@ -3,7 +3,7 @@ var request = require('request');
 //Authentication URI to Generate AccessToken
 var authUri = "https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token"; // to get accesstoken
 //Broadcast URI specific to Facebook
-var broadcastUri = "https://facebook.botframework.com//v3/conversations/";
+var broadcastUri = "https://facebook.botframework.com/v3/conversations/";
 // Bot Id and pwd
 //App Id from Microsoft Bot Framework Account
 var clientId = "a80650b1-7896-42c9-a7f6-bf03febb6d0a";
@@ -74,6 +74,7 @@ exports.send_a_broadcast = function (req, res) {
                                     "replyToId": botFBId
                                 }
                             }, function (error1, response1, body1) {
+                                console.log(response);
                                 if (response1 && (response1.statusCode === 200 || response1.statusCode === 201)) {
                                     //broadcast sent
                                     if ((user.length - 1) == i) {
