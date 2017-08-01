@@ -887,14 +887,14 @@ questions = [
     }
 ]
 
-for (var i = 0; i < questions.length; i++){
-  var newQuestion = questions[i]
-  delete newQuestion["_id"]
-  newQuestion = QAS(newQuestion);
-  newQuestion.save(function(err, saved){
-    console.log(err);
-  })
-}
+// for (var i = 0; i < questions.length; i++){
+//   var newQuestion = questions[i]
+//   delete newQuestion["_id"]
+//   newQuestion = QAS(newQuestion);
+//   newQuestion.save(function(err, saved){
+//     console.log(err);
+//   })
+// }
 
 app.use(function (req, res, next) {
 
