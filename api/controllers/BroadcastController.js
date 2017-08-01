@@ -14,7 +14,7 @@ var botAppName = "pubot";
 // Bot Facebook ID
 var botFBId = "1902223490088036";
 // Bot Facebook Name
-var botFBName = "PUAMScavengerBot";
+var botFBName = "ScavengerBot";
 //Authentication scope
 var scope = "https://api.botframework.com/.default";
 
