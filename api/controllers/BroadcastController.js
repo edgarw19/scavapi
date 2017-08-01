@@ -6,15 +6,15 @@ var authUri = "https://login.microsoftonline.com/botframework.com/oauth2/v2.0/to
 var broadcastUri = "https://facebook.botframework.com//v3/conversations/";
 // Bot Id and pwd
 //App Id from Microsoft Bot Framework Account
-var clientId = "55be64af-5a2a-4309-9bb8-28b7f5da023d";
+var clientId = "a80650b1-7896-42c9-a7f6-bf03febb6d0a";
 //App Pwd from Microsoft Bot Framework Account
-var clientSecret = "iOQb3kK3CHGtbb9h55Nhjpn";
+var clientSecret = "1a0Hp6vL2zkrMKoqKLeRjPv";
 //Bot name from Microsoft Bot Framework Account
-var botAppName = "botrndscavenger";
+var botAppName = "pubot";
 // Bot Facebook ID
-var botFBId = "1814388888587587";
+var botFBId = "1902223490088036";
 // Bot Facebook Name
-var botFBName = "Scavenger Demo Bot";
+var botFBName = "PUAMScavengerBot";
 //Authentication scope
 var scope = "https://api.botframework.com/.default";
 
