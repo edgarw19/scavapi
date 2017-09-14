@@ -1,22 +1,5 @@
 'use strict';
 var request = require('request');
-//Authentication URI to Generate AccessToken
-var authUri = "https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token"; // to get accesstoken
-//Broadcast URI specific to Facebook
-var broadcastUri = "https://facebook.botframework.com/v3/conversations/";
-// Bot Id and pwd
-//App Id from Microsoft Bot Framework Account
-var clientId = "a80650b1-7896-42c9-a7f6-bf03febb6d0a";
-//App Pwd from Microsoft Bot Framework Account
-var clientSecret = "1a0Hp6vL2zkrMKoqKLeRjPv";
-//Bot name from Microsoft Bot Framework Account
-var botAppName = "pubot";
-// Bot Facebook ID
-var botFBId = "1902223490088036";
-// Bot Facebook Name
-var botFBName = "ScavengerBot";
-//Authentication scope
-var scope = "https://api.botframework.com/.default";
 
 var mongoose = require('mongoose'),
     Users = mongoose.model('User');
